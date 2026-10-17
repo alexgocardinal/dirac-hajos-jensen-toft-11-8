@@ -65,10 +65,9 @@ sh verify.sh
 The script compiles imports in order and stops at the first Lean error.
 Warnings about deprecated tactics or unused simplifier arguments are harmless.
 
-To make the repository reproducible, copy `lean-toolchain`, `lakefile.toml`
-(or `lakefile.lean`), and `lake-manifest.json` from the **working** mathlib
-project on the author's computer into this folder. Those three exact files
-were not available when this bundle was made. Do not upload `.lake`.
+The repository includes `lean-toolchain`, `lakefile.toml`, and
+`lake-manifest.json` from the author's working project. Lake recreates the
+local `.lake` cache as needed; the cache is excluded from Git.
 
 ## Paper and data
 
